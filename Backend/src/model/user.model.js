@@ -17,11 +17,11 @@ const userSchema = new mongoose.Schema({
   },
   fullname: {
     firstName: { type: String, required: true },
-    lastName: { type: String },
+    lastName: { type: String }
   },
   role: {
     type: String,
-    enum: ["user", "admin"],
+    enum: ["user", "seller"],
     default: "user",
   },
 });
