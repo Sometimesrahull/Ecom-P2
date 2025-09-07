@@ -84,7 +84,7 @@ async function userLogin(req, res) {
   });
 }
 
-async function sellerRregister(req,res) {
+async function sellerRegister(req,res) {
 
   const{username,email,fullname:{firstName,lastName},password}=req.body;
 
@@ -158,4 +158,4 @@ async function sellerLogin(req,res){
 
 
 }
-module.exports = { userRegister, userLogin, sellerRregister, sellerLogin };
+module.exports = { userRegister, userLogin, sellerRegister, sellerLogin };
